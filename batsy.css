@@ -1,0 +1,78 @@
+body {
+background-image: url("name.jpg");
+background-repeat: no-repeat;
+font-family: Roboto;
+background-size: 100%;
+margin: 0;
+text-decoration: none;
+}
+ul {
+  list-style: none; /*убираем маркеры списка*/
+  margin: 0; /*убираем отступы*/
+  padding-left: 0; /*убираем отступы*/
+
+
+  background: #5f5f5f; /*добавляем фон всему меню*/
+  height: 50px; /*задаем высоту*/
+}
+#dad,#mam,#brother{
+  font-size: 36px;
+
+}
+
+a {
+  text-decoration: none; /*убираем подчеркивание текста ссылок*/
+  background:#5f5f5f; /*добавляем фон к пункту меню*/
+  color:#fff; /*меняем цвет ссылок*/
+  padding:0px 15px; /*добавляем отступ*/
+  font-family: arial; /*меняем шрифт*/
+  line-height:50px; /*ровняем меню по вертикали*/
+  display: block;
+
+  /*border-right: 1px solid #fff;*/ /*добавляем бордюр справа*/
+
+}
+a:hover {
+  background:#4caf50;/*добавляем эффект при наведении*/
+}
+li {
+  float:left; /*Размещаем список горизонтально для реализации меню*/
+  position:relative; /*задаем позицию для позиционирования*/
+}
+
+    /*Стили для скрытого выпадающего меню*/
+    li > ul {
+        position:absolute;
+
+        display:none;
+    }
+
+    /*Делаем скрытую часть видимой*/
+    li:hover > ul {
+        display:block;
+        width:250px;  /*Задаем ширину выпадающего меню*/
+    }
+   li:hover > ul > li {
+        float:none; /*Убираем горизонтальное позиционирование*/
+    }
+    #папа {
+flex-direction: row }
+.div1 {
+float: left; width: 72%;
+
+display: block;}
+.div2 {
+float: right; width: 28%;
+
+display: block;
+}
+#function{
+    font-size: 36px;
+    color: white;
+}
+#button{
+font-size: 16px;
+}
+#exi{
+  color: white;
+}
